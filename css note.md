@@ -23,9 +23,9 @@
 
 CSS3 Border（边框）主要有以下属性：
 
-	+ border-radius		用于创建圆角
-	+ box-shadow		用于向方框添加阴影
-	+ border-image		使用图片来创建边框
++ border-radius		用于创建圆角
++ box-shadow		用于向方框添加阴影
++ border-image		使用图片来创建边框
 
 ```
 	-moz-border-radius: 25px; /* For Firefox Browser */
