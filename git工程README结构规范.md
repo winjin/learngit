@@ -1,5 +1,5 @@
 
-<center> # git工程README结构规范 </center>
+ # <center> git工程README结构规范 </center>
 
 ##目录
 
