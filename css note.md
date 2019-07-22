@@ -1,4 +1,4 @@
-## css 总结
+# css 总结
 
 ![css priority](https://github.com/winjin/learngit/blob/master/priority_css.jpg)
 
