@@ -46,4 +46,5 @@ CSS3 Border（边框）主要有以下属性：
 	-o-border-image: url(/images/border.png) 30 30 round; /* Opera */
 	border-image: url(/images/border.png) 30 30 round;
 ```
-
+[学习CSS布局](http://zh.learnlayout.com/position-example.html)
+http://zh.learnlayout.com/position-example.html
