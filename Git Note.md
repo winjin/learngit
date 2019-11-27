@@ -55,7 +55,9 @@ push：push的远端地址
 4. git config --global --replace-all user.name "your name"  修改全局用户名称
 - 提交到暂存空间
 1. git add readme.txt 添加一个文件
-2. git add . 添加all文件
+2. git add . 把工作区文件提交到暂存区。提交的文件不包括删除的。
+3. git add -u 把工作区文件提交到暂存区。提交的文件不包括 untracked file
+4. git add -A 把所有改动提交到暂存区
 - 提交已暂存文件
 1. git pull origin test 拉取本地test代码
 2. git commit -m '描述'
