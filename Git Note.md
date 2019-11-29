@@ -9,7 +9,7 @@ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            <command> [<args>]
 ```
 
-### 这些是在各种情况下使用的通用Git命令:
+### 以下这些是在各种情况下使用的通用 Git 命令:
 
 ##### 启动一个工作区域
    - clone      将存储库克隆到新目录中
@@ -18,7 +18,7 @@ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
 ##### 处理当前的更改
    - add        将文件内容添加到索引中
    - mv         移动或重命名文件、目录或符号链接
-   - reset      将当前磁头复位到指定的状态
+   - reset      将当前磁头指针复位到指定的状态
    - rm         从工作树和索引中删除文件
 
 ##### 检查历史记录和状态
@@ -42,16 +42,12 @@ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
    - pull       从另一个存储库或本地分支获取并与之集成
    - push       更新远程引用以及相关的对象
 
-- 'git help -a' and 'git help -g' 列出可用的子命令和一些概念指南。
-- 参见 'git help <command>' or 'git help <concept>' 以了解特定的子命令或概念。
-
 
 ## Git 概述
 
 ### Git 原理：
 
-Git在每次提交更新时，都会浏览一遍所有文件的指纹信息(校验和)。如果发现哪个文件有变化，就对文件做一个快照，当到索引中；如果没有变化，就只对上次的快照做一个链接。
-在保存到Git之前，所有数据都会进行SHA-1校验和计算，并将这个结果作为数据的索引和唯一标识。
+Git 在每次提交更新时，都会浏览一遍所有文件的指纹信息(校验和)。如果发现哪个文件有变化，就对文件做一个快照，当到索引中；如果没有变化，就只对上次的快照做一个链接。在保存到 Git 之前，所有数据都会进行 SHA-1 校验和计算，并将这个结果作为数据的索引和唯一标识。
 
 ### Git 工作区中文件的状态： 
 
@@ -62,18 +58,17 @@ Git在每次提交更新时，都会浏览一遍所有文件的指纹信息(校�
 
 ### 在 Git 中有三个区域：
 
-- git directory : 本地仓库 repository
+- git directory : 本地仓库 (repository)
 - staging area  : 暂存区 (index 索引)
-- working directory : 工作区、工作树
+- working directory : 工作区 (工作树)
 
 ### Git 特点：
 
 1. 直接记录快照，而非差异比较  
 2. 近乎所有操作都是本地执行  
-3. 时刻保持数据完整性  checksum
+3. 时刻保持数据完整性 checksum
 4. 多数操作仅添加数据  
 5. 文件的三种状态  
-
 
 ### Git 配置：
 
@@ -213,8 +208,11 @@ git stash clear
 
 
 ### Git 学习参考：
-http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
-http://www.ruanyifeng.com/blog/2015/12/git-workflow.html
+- 'git help -a' and 'git help -g' 列出可用的子命令和一些概念指南。
+- 参见 'git help <command>' or 'git help <concept>' 以了解特定的子命令或概念。
+
++ http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
++ http://www.ruanyifeng.com/blog/2015/12/git-workflow.html
 
 
 
