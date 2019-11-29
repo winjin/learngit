@@ -106,46 +106,46 @@ git config --global user.email "my email@email.com"
 - git remote add origin https://github.com/winjin/learngit.git	添加一个远程仓库的指针到本地
 - git push -u origin master	将本地的`master`分支推送到远程`origin`仓库	
 
-- 初始化版本库
+#### 初始化版本库
 1. git clone 克隆仓库
 2. git init  新建仓库
 3. git config --global --replace-all user.email "your email address"  修改全局用户`email`地址
 4. git config --global --replace-all user.name "your name"  修改全局用户名称
-- 提交到暂存空间
+#### 提交到暂存空间
 1. git add readme.txt 添加一个文件
 2. git add . 把工作区文件提交到暂存区。提交的文件不包括删除的。
 3. git add -u 把工作区文件提交到暂存区。提交的文件不包括 untracked file
 4. git add -A 把所有改动提交到暂存区
-- 提交已暂存文件
+#### 提交已暂存文件
 1. git pull origin test 拉取本地test代码
 2. git commit -m '描述'
 3. git status 查看修改文件
 4. vim 文件（a.php/b.html）
 5. git push origin test:master
 提交本地test分支作为远程的master分支
-- 新建分支
+#### 新建分支
 1. git branch -a 查看所有分支(包括远程分支)
 2. git branch -l 查看所有已经创建的分支
 3. git branch -v 查看分支的扩展详情
 4. git branch -av 查看那所有分支的扩展详情
 5. git fetch   是把code从远程库获取到本地库中
 6. git branch 分支名称(test) 新建分支(test)
-- 切换分支
+#### 切换分支
 1. git checkout 分支名称(test)
-- 合并分支
+#### 合并分支
 1. git checkout master 从`test`分支切换到`master`
 2. git merge 子分支(test)
 
-- 在master分支上面合并子分支
+- 在`master`分支上面合并子分支
 ```
 git branch --set-upstream-to=   添加上游
 git reset --merge  恢复合并，回到`merge`之前的状态
-git revert HEAD    恢复HEAD 
-git reset HEAD~5   撤销过去最近的5个commit
+git revert HEAD    恢复`HEAD`
+git reset HEAD~5   撤销过去最近的5个`commit`
 ```
-- 删除分支
+#### 删除分支
 git branch -d [branch-name]
-- 删除远程分支
+#### 删除远程分支
 git push origin --delete [branch-name]
 git branch -dr [remote/branch]
 
@@ -158,12 +158,12 @@ git branch -dr [remote/branch]
 git config --global user.name "my-name"
 git config --global user.email "my email@email.com"
 ```
-接下来，就是去建一个仓库，用git来管理了：
 
+接下来，就是去建一个仓库，用`git`来管理了：s
 ```
 mkdir sandbox	-- 创建一个目录，用来作为一个仓库的目录
 cd sandbox		-- 进入这个目录
-git init		-- 初始化仓库 (这时起这个目录才真正算是一个git仓库)
+git init		-- 初始化仓库 (这时起这个目录才真正算是一个`git`仓库)
 touch README	-- 新建一个文件
 git add README	-- 把文件添加到暂存区
 git status		-- 查看文件的状态
