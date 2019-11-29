@@ -45,7 +45,8 @@ origin:本地默认的远端设置的名称
 fetch：pull的远端地址
 push：push的远端地址
 
-
+http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+http://www.ruanyifeng.com/blog/2015/12/git-workflow.html
 
 # Git command
 - 初始化版本库
@@ -70,7 +71,7 @@ push：push的远端地址
 2. git branch -l 查看所有已经创建的分支
 3. git branch -v 查看分支的扩展详情
 4. git branch -av 查看那所有分支的扩展详情
-5. git fetch 更新所有分支
+5. git fetch   是把code从远程库获取到本地库中
 6. git branch 分支名称(lucy_test) 新建分支(lucy_test)
 - 切换分支
 1. git checkout 分支名称(lucy_test)
@@ -80,3 +81,28 @@ push：push的远端地址
 在master分支上面合并子分支
 
 git branch --set-upstream-to=   添加上游
+
+git reset --merge  恢复合并，回到merge之前的状态
+git revert HEAD    恢复HEAD 
+git reset HEAD~5   撤销过去最近的5个commit
+
+删除分支
+git branch -d [branch-name]
+
+删除远程分支
+git push origin --delete [branch-name]
+git branch -dr [remote/branch]
+
+
+rebase ： 所谓 rebase 就是你的提交历史的一个副本分支
+
+# Force Push Basics
+
+If you’re working on a team and need to rebase a shared branch, here are the steps:
+
+    Make sure your team has committed and pushed any pending changes
+    Ask your team to pause work on that branch temporarily
+    Make sure you have the latest changes for that branch (git pull)
+    Rebase, then git push origin <yourbranch> -f
+    Have your team fix up their local branches with git checkout <yourbranch>, git fetch and git reset --hard origin/<yourbranch>
+
