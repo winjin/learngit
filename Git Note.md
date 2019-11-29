@@ -11,17 +11,17 @@ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
 
 ### 这些是在各种情况下使用的通用Git命令:
 
-#### 启动一个工作区域(参见:git帮助教程)
+##### 启动一个工作区域
    - clone      将存储库克隆到新目录中
    - init       创建一个空的Git存储库或重新初始化一个现有的存储库
 
-##### 处理当前的更改(参见:git帮助每日版)
+##### 处理当前的更改
    - add        将文件内容添加到索引中
    - mv         移动或重命名文件、目录或符号链接
    - reset      将当前磁头复位到指定的状态
    - rm         从工作树和索引中删除文件
 
-##### 检查历史记录和状态(参见:git帮助修订)
+##### 检查历史记录和状态
    - bisect     使用二分查找查找引入错误的提交
    - grep       打印匹配一个正则模式的行数 Print lines matching a pattern 
    - log        显示提交日志
@@ -37,7 +37,7 @@ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
    - rebase     在另一个基准点上重新应用提交 Reapply commits on top of another base tip
    - tag        创建、列出、删除或验证用GPG签名的标记对象
 
-##### 协作(参见:git帮助工作流)
+##### 协作
    - fetch      从另一个存储库下载对象和引用到本地仓库
    - pull       从另一个存储库或本地分支获取并与之集成
    - push       更新远程引用以及相关的对象
