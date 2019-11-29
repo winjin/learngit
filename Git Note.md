@@ -72,9 +72,9 @@ Git 在每次提交更新时，都会浏览一遍所有文件的指纹信息(校
 
 ### Git 配置：
 
-系统配置目录： /etc/gitconfig
-当前用户配置目录： ~/.gitconfig
-当前项目配置目录： ~/.git/config
+- 系统配置目录： /etc/gitconfig
+- 当前用户配置目录： ~/.gitconfig
+- 当前项目配置目录： ~/.git/config
 ```
 git config --global user.name "my-name"
 git config --global user.email "my email@email.com"
@@ -84,34 +84,32 @@ git config --global user.email "my email@email.com"
 ### 关于分支
 
 *使用分支其实就相当于在说：“我想基于这个提交以及它所有的父提交进行新的工作”*
-git branch <branch-name>		创建分支
-git checkout <branch-name>		切换分支
-git checkout -b <branch-name>	创建并切换到分支
-git merge bugfix				把`bugfix`合并到`master`(当前)分支
-git rebase bugfix				把`bugfix`重定位到`master`(当前)分支
+- git branch <branch-name>		创建分支
+- git checkout <branch-name>		切换分支
+- git checkout -b <branch-name>	创建并切换到分支
+- git merge bugfix				把`bugfix`合并到`master`(当前)分支
+- git rebase bugfix				把`bugfix`重定位到`master`(当前)分支
+
 
 *在 Git 中合并两个分支时会产生一个特殊的提交记录，它有两个父节点。翻译成自然语言相当于：“我要把这两个父节点本身及它们所有的祖先都包含进来。”*
-
 *第二种合并分支的方法是 git rebase。Rebase 实际上就是取出一系列的提交记录，“复制”它们，然后在另外一个地方逐个的放下去*。
 
 
-
-
 ### 基础命令
-git init					新建一个git仓库
-git pull					拉取
-git pull origin master		拉取初始主分支
-git status					查看目前的状态
-git add <filename>			把文件从*工作区*添加到*暂存区*
-git commit -m "comments"	把文件从*暂存区*提交到*仓库*
-git log						查看提交的commit的信息
-git remote add origin https://github.com/winjin/learngit.git	添加一个远程仓库的指针到本地
-git push -u origin master	将本地的master分支推送到远程origin仓库	
+- git init					新建一个`git`仓库
+- git pull					拉取
+- git pull origin master		拉取初始主分支
+- git status					查看目前的状态
+- git add <filename>			把文件从*工作区*添加到*暂存区*
+- git commit -m "comments"	把文件从*暂存区*提交到*仓库*
+- git log						查看提交的commit的信息
+- git remote add origin https://github.com/winjin/learngit.git	添加一个远程仓库的指针到本地
+- git push -u origin master	将本地的`master`分支推送到远程`origin`仓库	
 
 - 初始化版本库
 1. git clone 克隆仓库
 2. git init  新建仓库
-3. git config --global --replace-all user.email "your email address"  修改全局用户email地址
+3. git config --global --replace-all user.email "your email address"  修改全局用户`email`地址
 4. git config --global --replace-all user.name "your name"  修改全局用户名称
 - 提交到暂存空间
 1. git add readme.txt 添加一个文件
@@ -135,16 +133,16 @@ git push -u origin master	将本地的master分支推送到远程origin仓库
 - 切换分支
 1. git checkout 分支名称(test)
 - 合并分支
-1. git checkout master 从test分支切换到master
+1. git checkout master 从`test`分支切换到`master`
 2. git merge 子分支(test)
 
 - 在master分支上面合并子分支
+```
 git branch --set-upstream-to=   添加上游
-
-git reset --merge  恢复合并，回到merge之前的状态
+git reset --merge  恢复合并，回到`merge`之前的状态
 git revert HEAD    恢复HEAD 
 git reset HEAD~5   撤销过去最近的5个commit
-
+```
 - 删除分支
 git branch -d [branch-name]
 - 删除远程分支
