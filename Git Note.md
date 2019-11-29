@@ -84,6 +84,7 @@ git config --global user.email "my email@email.com"
 ### 关于分支
 
 *使用分支其实就相当于在说：“我想基于这个提交以及它所有的父提交进行新的工作”*
+
 - git branch <branch-name>		创建分支
 - git checkout <branch-name>		切换分支
 - git checkout -b <branch-name>	创建并切换到分支
@@ -122,7 +123,8 @@ git config --global user.email "my email@email.com"
 3. git status 查看修改文件
 4. vim 文件（a.php/b.html）
 5. git push origin test:master
-提交本地test分支作为远程的master分支
+
+### 提交本地test分支作为远程的`master`分支
 #### 新建分支
 1. git branch -a 查看所有分支(包括远程分支)
 2. git branch -l 查看所有已经创建的分支
